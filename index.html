@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chá de Panela</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Chá de Panela</h1>
+            <h2>Bianca & Guilherme</h2>
+        </header>
+
+        <section id="name-section">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" required>
+            <button onclick="iniciar()">Iniciar</button>
+        </section>
+
+        <section id="gift-list" class="hidden">
+            <!-- Lista de presentes será gerada aqui -->
+        </section>
+
+        <div id="confirmation-modal" class="modal hidden">
+            <div class="modal-content">
+                <!-- Conteúdo da janela de confirmação será adicionado dinamicamente -->
+            </div>
+        </div>
+
+        <section id="admin-section" class="hidden">
+            <h2>Administração</h2>
+            <button onclick="mostrarEscolhas()">Mostrar Escolhas</button>
+            <div id="escolhas-list"></div>
+        </section>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
